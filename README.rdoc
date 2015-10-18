@@ -1,0 +1,37 @@
+== README
+
+Basic set up for a rails app using angular as the front-end and postgres database
+
+install node
+install npm installer
+install bower
+bower.json should look like this
+{
+  "lib": {
+    "name": "bower-rails generated lib assets",
+    "dependencies": {
+      "angular": "1.2.20",
+      "angular-route": "1.2.20"
+    }
+  },
+  "vendor": {
+    "name": "bower-rails generated vendor assets",
+    "dependencies": {
+    }
+  }
+}
+run bower
+To get started
+	-add 
+	gem 'bower-rails'
+	gem 'angular-rails-templates'
+	gem 'hirb'
+Sprockets 2.13 was giving me problems so I would suggest using the version specified below, you're going to have to run rails sprockets update or something like that
+gem 'sprockets', '2.12.3'
+	-run bundle install 
+	set database specs 
+	-rake db:create
+	-rake db:migrate
+
+
+For now everytime I create a controller or factory I have to add it on too application.js hopefully I can figure out how to fix that, if you have solution let me know 
